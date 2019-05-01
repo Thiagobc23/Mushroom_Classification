@@ -54,7 +54,10 @@ Multi Layer Perceptron (MLP)
 
 ### Results  
   
-Tests were performed without assigning a random seed, replicating this tests will bring similar but no equal results. 
+Testing and training data were split as:
+        
+        X_train, X_test, y_train, y_test = train_test_split(x, y, test_size = 0.1, random_state = 100)
+        
 
 | CLASSIFIER                        | Accuracy with 90% training | Accuracy with 80% training | Accuracy with 70% training |
 |-----------------------------------|:--------------------------:|:--------------------------:|:--------------------------:|
