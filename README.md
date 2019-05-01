@@ -27,6 +27,14 @@
     
 Inspired by https://www.kaggle.com/coolman/different-classification-techniques-python  
 Adapted to categorical classification on https://www.kaggle.com/uciml/mushroom-classification  
+  
+Imports: 
+numpy  
+pandas  
+sklearn  
+matplotlib  
+xgboost  
+ipywidgets  
 
 ### Feature Selection  
 
