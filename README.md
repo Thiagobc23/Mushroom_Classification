@@ -28,7 +28,7 @@
 Inspired by https://www.kaggle.com/coolman/different-classification-techniques-python  
 Adapted to categorical classification on https://www.kaggle.com/uciml/mushroom-classification  
   
-Imports: 
+Imports:  
 numpy  
 pandas  
 sklearn  
