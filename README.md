@@ -25,5 +25,36 @@
     population:                 abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y
     habitat:                    grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d
     
-Inspired on https://www.kaggle.com/coolman/different-classification-techniques-python  
-Adapted to categorical classification on https://www.kaggle.com/uciml/mushroom-classification
+Inspired by https://www.kaggle.com/coolman/different-classification-techniques-python  
+Adapted to categorical classification on https://www.kaggle.com/uciml/mushroom-classification  
+
+### Feature Selection  
+
+I used Recursive Feature Elimination (RFE) to recursively test logistical regression models and select the subcategories that were most accurate at predicting the output.  
+The selected categories were: odor, gill-size, stalk-surface-above-ring, stalk-color-below-ring, spore-print-color  
+
+### Methods tested  
+
+Naive Bayes  
+Nearest Neighbors  
+Decision Tree  
+Random Forest  
+XGBoost  
+Support Vector Machine (SVM)  
+Stochastic Gradient Descent (SGD)  
+Multi Layer Perceptron (MLP)  
+
+### Results  
+  
+Tests were performed without assigning a random seed, replicating this tests will bring similar but no equal results. 
+
+| CLASSIFIER                        | Accuracy with 90% training | Accuracy with 80% training | Accuracy with 70% training |
+|-----------------------------------|----------------------------|----------------------------|----------------------------|
+| Naive Bayes                       | 98.40%                     | 98.65%                     | 98.76%                     |
+| Nearest Neighbors                 | 100%                       | 100%                       | 100%                       |
+| Decision Tree                     | 100%                       | 100%                       | 100%                       |
+| Random Forest                     | 100%                       | 100%                       | 100%                       |
+| XGBoost                           | 100%                       | 100%                       | 100%                       |
+| Support Vector Machine (SVM)      | 100%                       | 100%                       | 100%                       |
+| Stochastic Gradient Descent (SGD) | 99.88%                     | 99.87%                     | 98.31%                     |
+| Multi Layer Perceptron (MLP)      | 100%                       | 100%                       | 100%                       |
