@@ -57,12 +57,16 @@ Multi Layer Perceptron (MLP)
 Tests were performed without assigning a random seed, replicating this tests will bring similar but no equal results. 
 
 | CLASSIFIER                        | Accuracy with 90% training | Accuracy with 80% training | Accuracy with 70% training |
-|-----------------------------------|----------------------------|----------------------------|----------------------------|
-| Naive Bayes                       | 98.40%                     | 98.65%                     | 98.76%                     |
-| Nearest Neighbors                 | 100%                       | 100%                       | 100%                       |
-| Decision Tree                     | 100%                       | 100%                       | 100%                       |
-| Random Forest                     | 100%                       | 100%                       | 100%                       |
-| XGBoost                           | 100%                       | 100%                       | 100%                       |
-| Support Vector Machine (SVM)      | 100%                       | 100%                       | 100%                       |
-| Stochastic Gradient Descent (SGD) | 99.88%                     | 99.87%                     | 98.31%                     |
-| Multi Layer Perceptron (MLP)      | 100%                       | 100%                       | 100%                       |
+|-----------------------------------|:--------------------------:|:--------------------------:|:--------------------------:|
+| Naive Bayes                       |           98.40%           |           98.65%           |           98.76%           |
+| Nearest Neighbors                 |            100%            |            100%            |            100%            |
+| Decision Tree                     |            100%            |            100%            |            100%            |
+| Random Forest                     |            100%            |            100%            |            100%            |
+| XGBoost                           |            100%            |            100%            |            100%            |
+| Support Vector Machine (SVM)      |            100%            |            100%            |            100%            |
+| Stochastic Gradient Descent (SGD) |           99.88%           |           99.87%           |           98.31%           |
+| Multi Layer Perceptron (MLP)      |            100%            |            100%            |            100%            |
+
+### Widget
+
+I used ipywidgets to design a simple interface in jupyter where you can run a model and then test it with some input, if the model can return a probability it's also displayed.
